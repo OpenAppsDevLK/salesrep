@@ -1,0 +1,87 @@
+/* Styling for tbl_added_items, tbl_return_items, tbl_payments, and all_invoice_table */
+#tbl_added_items, #tbl_return_items, #tbl_payments, #all_invoice_table {
+    /* Background and border */
+    background-color: #ffffff; /* White background for the table */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+/* Header styling */
+#tbl_added_items thead th, #tbl_return_items thead th, #tbl_payments thead th, #all_invoice_table thead th {
+    background-color: #3498db; /* Vibrant blue header background */
+    color: #ffffff; /* White text for contrast */
+    font-weight: 600; /* Bold text */
+    text-transform: uppercase; /* Uppercase for header text */
+    padding: 12px; /* Increased padding for better spacing */
+    border-bottom: 2px solid #2980b9; /* Darker blue border for separation */
+}
+
+/* Row styling */
+#tbl_added_items tbody tr, #tbl_return_items tbody tr, #tbl_payments tbody tr, #all_invoice_table tbody tr {
+    background-color: #f9fbfc; /* Very light gray for rows */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for rows */
+#tbl_added_items tbody tr:hover, #tbl_return_items tbody tr:hover, #tbl_payments tbody tr:hover, #all_invoice_table tbody tr:hover {
+    background-color: #e8f1fa; /* Light blue hover effect */
+}
+
+/* Cell styling */
+#tbl_added_items td, #tbl_return_items td, #tbl_payments td, #all_invoice_table td {
+    padding: 10px; /* Comfortable padding */
+    color: #333333; /* Dark gray text for readability */
+    vertical-align: middle; /* Center content vertically */
+    border: 1px solid #e0e0e0; /* Light gray borders for cells */
+}
+
+
+
+
+
+/* Input fields and select styling */
+#tbl_added_items input.form-control, #tbl_added_items select.form-control,
+#tbl_return_items input.form-control, #tbl_return_items select.form-control 
+#tbl_payments input.form-control, #tbl_payments select.form-control {
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text */
+    transition: border-color 0.3s ease; /* Smooth focus transition */
+}
+
+/* Focus effect for inputs and selects */
+#tbl_added_items input.form-control:focus, #tbl_added_items select.form-control:focus,
+#tbl_return_items input.form-control:focus, #tbl_return_items select.form-control:focus {
+    border-color: #3498db; /* Blue border on focus to match header */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); /* Subtle blue glow */
+}
+
+/* Delete button styling */
+#tbl_added_items .delete-row, #tbl_return_items .delete-row {
+    background-color: #e74c3c; /* Red background for delete button */
+    border-color: #c0392b; /* Darker red border */
+    color: #ffffff; /* White text */
+    border-radius: 4px; /* Rounded corners */
+    padding: 6px 10px; /* Compact padding */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for delete button */
+#tbl_added_items .delete-row:hover, #tbl_return_items .delete-row:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Ensure table responsiveness */
+.table-responsive {
+    border: none; /* Remove extra border from responsive wrapper */
+    padding: 0; /* Remove padding from table-responsive for no-padding class */
+}
+
+/* Optional: Adjust font size for better readability */
+#tbl_added_items th, #tbl_added_items td,
+#tbl_return_items th, #tbl_return_items td {
+    font-size: 14px; /* Slightly larger font for clarity */
+}
